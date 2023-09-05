@@ -1,0 +1,393 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portfolio Website-Ankit</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+  <!-- linking css file -->
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <style>
+    .section {
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+.section:last-of-type {
+    padding-bottom: 4rem;
+}
+    
+/* hero background image */
+.bgimage {
+    height:100vh;
+    background: url('image/DSC_0641.JPG');
+    background-size:cover;
+    position:relative;
+    padding: 0;
+    margin: 0;
+}
+/* text css above hero image*/
+.hero_title {
+    padding-top: 10rem;
+    font-size: 4.5rem;
+}
+.hero_desc {
+    font-size: 2rem;
+}
+.hero_text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.image_about {
+    width: 100%;
+}
+
+.navbarDark {
+    background: #000;
+}
+
+
+ .social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-twitter:hover,
+.fa-linkedin:hover, 
+.fa-twitch:hover {
+    color: #fff;
+}
+.fab {
+    color: #000000;
+}
+
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+  }
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: #008000;
+}
+.servicesText:hover {
+    border: 1px solid #008000;
+}
+
+.footer {
+    background-color: #808080;
+    text-align: center;
+}
+
+  </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll navbar-dark">
+        <div class="container">
+            <h1 style="  font-weight: bold; color: black;">Ankit</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home" style="  font-weight: bold; color: black;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" style="  font-weight: bold; color: black;">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services" style="  font-weight: bold; color: black;">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio" style="  font-weight: bold; color: black;">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" style="  font-weight: bold; color: black;">Contact</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+    
+    
+    <section class="container-fluid section bgimage" id="home">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero_text">
+                <h2 class="hero_title">Hi, it's me Ankit</h2>
+                <p class="hero_desc">I am a Devloper</p>
+            </div>
+        </div>
+    </section>
+    <br>
+    
+   
+    <section class="container mt-4 pt-4 section" id="about">
+        <h1 class="text-center">About Me</h1>
+        <br><br>
+        
+        <div class="row mt-4">
+            <div class="col-lg-6">
+                <img src="image/DSC_0001.jpg" class="image_about" alt="">
+            </div>
+
+            <div class="col-lg-6">
+                    <br><br><br>
+                <p style="font-weight: 500; text-align: center;"> 
+                    I’m a recent graduate of Ganpat University  with a BCA. I’m looking for an opportunity to gain experience in Devloper And Designing, preferably one that involves a lot of client work and project management.
+                </p>
+                <br><br><br>
+
+                <p style="font-weight: bold; ">Hobbies</p>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <ul >
+                            <li>Travel</li>
+                            <li>Creativity</li>
+                            <li>Communication</li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Photography</li>
+                            <li>Music</li>
+                            <li>Designing</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <p style="font-weight: bold; ">Language</p>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <ul >
+                            <li>Guj</li>
+                            <li>Hindi</li>
+                            <li>English</li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <p style="margin-top: -50px;">scan for more details</p>
+                        <img src="image/Qr code .png" alt="" style="height: 100px; width: 100px; margin-top: -10px;">
+                    </div>
+                </div>
+                <br><br><br>
+               <div><table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name of School/University </th>
+                    <th scope="col">Degree</th>
+                    <th scope="col">Percentage</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Sssvm</td>
+                    <td>SSC</td>
+                    <td>60%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>AVM</td>
+                    <td>HSC</td>
+                    <td>61%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Ganpat University</td>
+                    <td>BCA</td>
+                    <td>64.5</td>
+                  </tr>
+                </tbody>
+              </table></div>
+            </div>
+        </div>
+        
+    </section>
+    
+    <section class="container section" id="services">
+        <h1 class="text-center">Skills</h1>
+        <br>
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <!-- <i class="fas servicesIcon fa-clock"></i> -->
+                        <img src="image/html.2ba4fabc69a89a8f71e6.png" alt="" style="height: 100px; width: 100px; margin-left: 140px;">
+                        <br><br>
+                        <h4 class="card-title mt-3">HTML</h4>
+                        
+                    </div>
+                </div>  
+            </div>
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <!-- <i class='fas servicesIcon fa-layer-group'></i> -->
+                        <img src="image/css.69a82c2d9e45c933a9cb (1).png" alt="" style="height: 100px; width: 100px; margin-left: 140px;"> 
+                        <br><br>
+                        <h4 class="card-title mt-3">CSS</h4>
+
+                    </div>
+                </div>  
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <!-- <i class='far servicesIcon fa-check-circle'></i> -->
+                        <img src="image/javascript.1ccd6ef9bb1f9c84ef00.png" alt="" style="height: 100px; width: 100px; margin-left: 140px;">
+                        <br><br>
+                        <h4 class="card-title mt-3">Javascript</h4>
+                        
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body"><br>
+                        <!-- <i class='fas servicesIcon fa-search'></i> -->
+                        <img src="image/free-jquery-8-1175153.webp" alt="" style="height: 100px; width: 100px; margin-left: 140px;">
+                        <br><br>
+                        <h4 class="card-title mt-3">Jquery</h4>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <br>
+                        <!-- <i class='fas servicesIcon fa-shield-alt'></i> -->
+                        <img src="image/PHP-logo.svg.png" alt="" style="height: 100px; width: 100px; margin-left: 140px;">
+                        <br><br>
+                        <h4 class="card-title mt-3">Php</h4>
+                        
+                    </div>
+                </div>  
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <br>
+                        <!-- <i class='fas servicesIcon fa-wrench'></i> -->
+                        <img src="image/ce5e0bb3-16b9-4d88-9bca-7d237fe725a8-cover.png" alt="" style="height: 100px; width: 100px; margin-left: 140px;">
+                        <br><br>
+                        <h4 class="card-title mt-3">Figma</h4>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio section-->
+    <section class="section" id="portfolio">
+        <div class="container mt-3">
+            <h1 class="text-center">Tools</h1>
+            <br><br>
+            <div class="row">
+                <div class="col-lg-6 mt-6">
+                    <div class="card">
+                        <br>
+                        <img class="card-img-top" src="image/vs.png" alt="Card image" style="height: 100px; width: 100px; margin-left: 250px;" >
+                        <br>
+                        <div class="card-body">
+                            <h4 class="card-title">Vs Code</h4>
+                           
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-6">
+                    <div class="card">
+                        <br>
+                        <img class="card-img-top" src="image/ce5e0bb3-16b9-4d88-9bca-7d237fe725a8-cover.png" alt="Card image" style="height: 100px; width: 100px; margin-left: 250px;">
+                        <br>
+                        <div class="card-body">
+                            <h4 class="card-title">Figma</h4>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+    </section>
+   
+    <section class="container mt-3 section" id="contact">
+        <h1 class="text-center">Contact Me</h1>
+
+        <div class="row mt-4">
+            <div class="col-lg-6">
+                <!-- to edit google map go to https://www.embed-map.com type your location, generate html code and copy the html  -->
+                <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
+                    <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d917.4540776387489!2d72.59295278354575!3d23.103819200000018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83c9bd7a2419%3A0x59d24e11e6442934!2s19%2C%20Mahavirnagar%2C%20Nigam%20Nagar%2C%20Chandkheda%2C%20Ahmedabad%2C%20Gujarat%20382424!5e0!3m2!1sen!2sin!4v1693774897117!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
+                    <style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
+                    </style>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <!-- form fields -->
+                <form>
+                    <input type="text" class="form-control form-control-lg" placeholder="Name">
+                    <input type="email" class="form-control mt-3" placeholder="Email">
+                    <input type="text" class="form-control mt-3" placeholder="Subject">
+                    <div class="mb-3 mt-3">
+                        <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
+                    </div>
+                </form>
+                <button type="button" class="btn btn-success mt-3">Contact Me</button>
+            </div>
+        </div>
+        
+    </section>
+    
+    <!-- footer section-->
+    <footer class="container-fluid footer" id="footer">
+        <!-- social media icons -->
+        <div class="social-icons mt-4">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>
+        </div>
+    </footer>
+    
+
+    <!-- load javascript after loading all html content -->
+    <!-- <script src="script.js"></script> -->
+
+</body>
+
+</html>
